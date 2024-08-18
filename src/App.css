@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  background-color: #eee;
+}
+.weekOrders {
+  /* background-color: rgb(236, 214, 214); */
+  background-color: #eee;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  
+}
+.weekOrders h3{
+  color: black;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 5px;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  /* padding: 0 0.25rem 0.25rem; */
+}
+
+
+/* ul li ::before {
+  content: "\200B";
+} */
+
+.tabs{
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  
+  justify-content: center;
+
+}
+.tab-list{
+  min-width: 480px;
+  max-width: 80%;
+  /* margin: 0 5%; */
+  padding: 10px 0;
+ 
+  /* background-color: rgb(174, 174, 208); */
+  
+}
+.extra{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+
+.addToWeekBtn{
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #9b9aab;
+  color: white;
+}
+
+.addToWeekBtn:disabled {
+  background-color: grey;
+  color: darkgrey;
+  cursor: not-allowed;
+}
+
+.divMeals{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 50px 10%;
+}
+.mealCard{
+  background-color: white;
+  border-radius: 10px;
+  border-color: transparent;
+  display: grid;
+  /* grid-template-rows: max-content 200px 1fr; */
+  font-size: 16px;
+  
+}
+.selected {
+  border: 4px solid blue;
+}
+.cardList{
+  list-style: none;
+}
+
+
+/* .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+} */
+
+/* .card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+} */
+.imgDiv{
+  text-align: center;
+  border-radius: 10px;
+  margin: 25px;
+  
+}
+.mealCard ul li{
+  list-style: none;
+  margin: 25px;
+}
+.mealCard ul img {
+  
+  width: 99%;
+  height: 99%;
+  border-radius: 10px;
+}
+.mealCard ul h3{
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.mealCard ul p{
+  font-weight: 500;
+  font-size: 1rem;
+  text-align:left;
+}
+.cardFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.active{
+  text-decoration: underline;
+  color:rgb(1, 1, 90)
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.modal button {
+  margin: 10px;
+}
+

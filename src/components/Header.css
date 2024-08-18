@@ -1,0 +1,38 @@
+.header{
+    height: 30vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    
+}
+
+.header::before{
+    background-image: url('../assets/images/pizzaImage1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+    inset: 0;
+    opacity: 0.3;
+}
+h1{
+    font-size: 40px;
+    color: black;
+    isolation: isolate;
+    font-weight: 600;
+    
+}
+p{
+   
+    color: black;
+    font-size: 20px;
+    isolation: isolate;
+    font-weight: 600;
+}
